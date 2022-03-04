@@ -12,10 +12,10 @@
 </head>
 <body>
     <div id="navbar1" class="flex">
-        <div >
-            <img id="logo" src="http://bizmonthly.com/wp-content/uploads/2020/04/Amazon-logo-black-template.png" alt="">
+        <div class="border" id="logo">
+            <img  src="http://bizmonthly.com/wp-content/uploads/2020/04/Amazon-logo-black-template.png" alt="">
         </div>
-        <div>
+        <div class="border">
             
             <div id="hellodiv">
                 <div>Hello</div>
@@ -42,21 +42,27 @@
                 search
                 </span></div>
         </div>
-        <div>
+        <div class="border" id="flagDrop">
             <img src="images/national_flag_of_india_4k_5k.jpg" alt="" id="flag">
+            <div class="dropdown-content">
+                <div>a</div>
+                <div>b</div>
+                <div>c</div>
+                <div>d</div>
+            </div>
         </div>
-        <div id="signInDrop">
+        <div id="signInDrop" class="border">
             <div class="hello">Hello,Sign in</div>
             <div>Account & Lists</div>
             <div class="dropdown-content">
-                <div>
+                <div id="sign">
                     <button id="signBtn">Sign in</button>
                     <br>
                     <span>New customer?</span><a href="">Start here</a>
                 </div>
                 <div class="flex">
-                    <div>
-                        <h4>Your Lists</h4>
+                    <div id="lists">
+                        <div>Your Lists</div>
                         <a href="">Create a Wish List</a>
                         <a href="">Wish from Any Website</a>
                         <a href="">Baby Wish List</a>
@@ -64,7 +70,7 @@
                         <a href="">Explore Showroom</a>
                     </div>
                     <div>
-                        <h4>Your Account</h4>
+                        <div>Your Account</div>
                         <a href="">Your Account</a>
                         <a href="">Your Orders</a>
                         <a href="">Your Wish List</a>
@@ -81,15 +87,22 @@
                 </div>
             </div>
         </div>
-        <div id="returns">
+        <div id="returns" class="border">
             <div class="hello">Returns</div>
-            <div>&orders</div>
+            <div>& Orders</div>
         </div>
-        <div>
-            
+        <div id="cartIcon" class="border">
+            <ly-svg-icon  p="cart-icon" class="ly-svg--red ly-svg--xl ng-isolate-scope"><svg xmlns="http://www.w3.org/2000/svg"
+                height="90%" width="70%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                <path ng-attr-d="{{$root.icons[ctrl.p]}}"
+                    d="M8,17.816a2.3,2.3,0,0,1-2.178-1.728L3.411,5.261a2.087,2.087,0,0,0-.695-1.006L0.475,2.771a0.815,0.815,0,0,1-.227-1.14L0.364,1.46a0.839,0.839,0,0,1,1.155-.224L3.76,2.721A3.89,3.89,0,0,1,5.24,4.864L7.654,15.691A0.434,0.434,0,0,0,8,15.968H19.965a0.488,0.488,0,0,0,.386-0.3l1.728-6.789a0.833,0.833,0,0,1,1.01-.6l0.2,0.05a0.82,0.82,0,0,1,.6,1l-1.728,6.789a2.32,2.32,0,0,1-2.2,1.694H8Zm11.754,2.695A1.534,1.534,0,1,1,18.223,19,1.525,1.525,0,0,1,19.757,20.511Zm-8.842,0A1.535,1.535,0,1,1,9.381,19,1.525,1.525,0,0,1,10.916,20.511Z">
+                </path>
+            </svg></ly-svg-icon>
+            <div id="cartSize">0</div>
+            <div id="cartName">Cart</div>
         </div>
         
-    </div>
+ </div>
     
 </body>
 </html>
